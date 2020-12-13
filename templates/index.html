@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h2>The Input</h2>
+    <form class="form-inline">
+        <!--First Name-->
+        <div class="form-group">
+        <label class="sr-only" for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+        </div>
+        <!--Last Name-->
+        <div class="form-group">
+        <label class="sr-only" for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+        </div>
+        
+        <!--Submit Button-->
+        <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        </br>
+        <h2>The Output:</h2>
+        <div id="output"></div>
+        </br>
+    <script type=text/javascript src="{{url_for('static', filename='jquery.js') }}"></script>
+    <script src="../tutorial.js"></script>
+</body>
